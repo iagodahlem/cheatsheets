@@ -1,3 +1,4 @@
+[index]: https://github.com/rafaelrinaldi/cheatsheets
 [abolish]: https://github.com/tpope/vim-abolish
 [surround]: https://github.com/tpope/vim-surround
 [unimpaired]: https://github.com/tpope/vim-unimpaired
@@ -82,4 +83,4 @@ Default list of Vim commands.
 
 ---
 
-[← Back](../../)
+[← Back][index]
