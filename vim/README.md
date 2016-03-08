@@ -52,7 +52,7 @@
 | `d$` or `D` | Delete from cursor until the end of line |
 | `cc` | Change the contents of current line |
 | `mq` | Create a marker named `q` |
-| ``q` | Move cursor to `q` marker position |
+| ```q`` | Move cursor to `q` marker position |
 | `qq` | Start recording a macro named `q` |
 | `q` | Stop recording macro |
 | `@q` | Play macro `q` |
