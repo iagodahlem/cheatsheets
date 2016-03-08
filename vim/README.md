@@ -5,7 +5,7 @@
 
 # Vim
 
-<img src=vim.svg width=150>
+<img src=vim.png width=150>
 
 1. [Defauts](#defaults)
 2. [Plugins](#plugins)
