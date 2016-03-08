@@ -5,7 +5,17 @@
 
 # Vim
 
-Default list of Vim commands.
+<img src=vim.svg width=150>
+
+1. [Defauts](#defaults)
+2. [Plugins](#plugins)
+  * [abolish.vim](#abolish-vim)
+  * [surround.vim](#surround-vim)
+  * [unimpaired.vim](#unimpaired-vim)
+
+---
+
+### Defaults
 
 | Command | Description |
 | --- | --- |
