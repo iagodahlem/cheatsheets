@@ -5,24 +5,33 @@
 [centering-things-table]: https://jsbin.com/medomec/edit?html,css,output
 [centering-things-flexbox]: https://jsbin.com/bimeno/edit?html,css,output
 [san-francisco-font]: https://developer.apple.com/fonts
+[new-css-specs]: http://www.xanthir.com/b4Ko0
+[custom-media-queries]: https://drafts.csswg.org/mediaqueries/#custom-mq
+[media-queries]: https://github.com/rafaelrinaldi/media-queries
+[custom-selectors]: http://dev.w3.org/csswg/css-extensions/#custom-selectors
+[custom-properties]: https://www.w3.org/TR/css-variables
 
 # CSS
 
 [![CSS is awesome](css-is-awesome.png)][css-is-awesome]
 
-1. [Apple San Fancisco font](#apple-san-francisco-font)
-2. [Centering things](#centering-things)
-  * [Using `transform` and absolute positioning](#using-transform-and-absolute-positioning)
-  * [Mimicking `<table>` display](#mimicking-table-display)
-  * [Using Flexbox](#using-flexbox)
-3. [Font anti alias](#font-anti-alias)
-4. [Smooth scrolling](#smooth-scrolling)
-5. [Text selection](#text-selection)
-6. [Transition easing functions](#transition-easing-functions)
+1. [Apple San Fancisco font](#1.0)
+2. [Centering things](#2.0)
+  * [Using `transform` and absolute positioning](#2.1)
+  * [Mimicking `<table>` display](#2.2)
+  * [Using Flexbox](#2.3)
+3. [Font anti alias](#3.0)
+4. [New CSS specs](#4.0)
+  * [Custom properties](#4.1) <small>(variables)</small>
+  * [Custom media queries](#4.2)
+  * [Custom selectors](#4.3)
+5. [Smooth scrolling](#5.0)
+6. [Text selection](#6.0)
+7. [Transition easing functions](#7.0)
 
 ---
 
-### Apple San Francisco font
+### <a name='1.0'></a>[Apple San Francisco font][san-francisco-font]
 
 ```css
 body {
@@ -30,9 +39,9 @@ body {
 }
 ```
 
-### Centering things
+### <a name='2.0'></a>Centering things
 
-#### [Using `transform` and absolute positioning][centering-things-transform]
+#### <a name='2.1'></a>[Using `transform` and absolute positioning][centering-things-transform]
 
 Useful when you already know the container dimension
 
@@ -52,7 +61,7 @@ Useful when you already know the container dimension
 }
 ```
 
-#### [Mimicking `<table>` display][centering-things-table]
+#### <a name='2.2'></a>[Mimicking `<table>` display][centering-things-table]
 
 ```css
 .parent {
@@ -66,7 +75,7 @@ Useful when you already know the container dimension
 }
 ```
 
-#### [Using Flexbox][centering-things-flexbox]
+#### <a name='2.3'></a>[Using Flexbox][centering-things-flexbox]
 
 ```css
 .parent {
@@ -78,7 +87,7 @@ Useful when you already know the container dimension
 .child {}
 ```
 
-### Font anti alias
+### <a name='3.0'></a>Font anti alias
 
 ```css
 * {
@@ -88,7 +97,48 @@ Useful when you already know the container dimension
 }
 ```
 
-### Smooth scrolling
+### <a name='4.0'></a>[New CSS specs][new-css-specs]
+
+#### <a name='4.1'></a>[Custom properties][custom-properties]
+
+* `:root` for top-level properties
+* `var()` to access values from custom properties
+
+```css
+:root {
+  --color: #F06;
+  --bg-color: #FFF;
+}
+
+body {
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+```
+
+#### <a name='4.2'></a>[Custom media queries][custom-media-queries]
+
+```css
+@custom-media --small-only screen and (max-width: 39.9375em);
+
+@media (--small-only) {
+  /* ... */
+}
+```
+
+<small>For responsive breakpoints that support the future spec, check out [`media-queries`][media-queries].</small>
+
+#### <a name='4.3'></a>[Custom selectors][custom-selectors]
+
+```css
+@custom-selector :--button button, a, input[type=button];
+
+:--button {
+  /* ... */
+}
+```
+
+### <a name='5.0'></a>Smooth scrolling
 
 ```css
 .container {
@@ -97,7 +147,7 @@ Useful when you already know the container dimension
 }
 ```
 
-### Text selection
+### <a name='6.0'></a>Text selection
 
 ```css
 /* Can't select both at the same time */
@@ -113,7 +163,7 @@ Useful when you already know the container dimension
 }
 ```
 
-### Transition easing functions
+### <a name='7.0'></a>Transition easing functions
 
 Rounded values from [Robert Penner][robert-penner]'s easing functions.
 
