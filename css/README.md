@@ -10,6 +10,7 @@
 [media-queries]: https://github.com/rafaelrinaldi/media-queries
 [custom-selectors]: http://dev.w3.org/csswg/css-extensions/#custom-selectors
 [custom-properties]: https://www.w3.org/TR/css-variables
+[list-selector]: https://jsbin.com/jegero/edit?html,css,output
 
 # CSS
 
@@ -25,9 +26,10 @@
   * [Custom properties](#4.1) <small>(variables)</small>
   * [Custom media queries](#4.2)
   * [Custom selectors](#4.3)
-5. [Smooth scrolling](#5.0)
-6. [Text selection](#6.0)
-7. [Transition easing functions](#7.0)
+5. [Single selector list styling](#5.0)
+6. [Smooth scrolling](#6.0)
+7. [Text selection](#7.0)
+8. [Transition easing functions](#8.0)
 
 ---
 
@@ -138,7 +140,17 @@ body {
 }
 ```
 
-### <a name='5.0'></a>Smooth scrolling
+### <a name='5.0'></a>[Single selector list styling][list-selector]
+
+```css
+/* No need to use multiple selector nor override rules */
+
+li:not(:last-of-type) {
+  /* ... */
+}
+```
+
+### <a name='6.0'></a>Smooth scrolling
 
 ```css
 .container {
@@ -147,7 +159,7 @@ body {
 }
 ```
 
-### <a name='6.0'></a>Text selection
+### <a name='7.0'></a>Text selection
 
 ```css
 /* Can't select both at the same time */
@@ -163,7 +175,7 @@ body {
 }
 ```
 
-### <a name='7.0'></a>Transition easing functions
+### <a name='8.0'></a>Transition easing functions
 
 Rounded values from [Robert Penner][robert-penner]'s easing functions.
 
