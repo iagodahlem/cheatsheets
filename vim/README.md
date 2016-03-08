@@ -2,6 +2,7 @@
 [abolish]: https://github.com/tpope/vim-abolish
 [surround]: https://github.com/tpope/vim-surround
 [unimpaired]: https://github.com/tpope/vim-unimpaired
+[vimfiles]: https://github.com/rafaelrinaldi/vimfiles
 
 # Vim
 
@@ -12,6 +13,8 @@
   * [abolish.vim](#2.1)
   * [surround.vim](#2.2)
   * [unimpaired.vim](#2.3)
+
+<small>My personal Vim configuration can be found [here][vimfiles].</small>
 
 ---
 
@@ -46,6 +49,13 @@
 | `gUU` | Convert the whole line to upper case |
 | `O` | Add new line above the cursor in insert mode |
 | `o` | Add new line below the cursor in insert mode |
+| `d$` or `D` | Delete from cursor until the end of line |
+| `cc` | Change the contents of current line |
+| `mq` | Create a marker named `q` |
+| ``q` | Move cursor to `q` marker position |
+| `qq` | Start recording a macro named `q` |
+| `q` | Stop recording macro |
+| `@q` | Play macro `q` |
 
 ## <a name='2.0'></a>Plugins
 
@@ -56,7 +66,7 @@
 | `crs` | Convert string to snake_case |
 | `crm` | Convert string to MixedCase (aka PascalCase) |
 | `crc` | Convert string to camelCase |
-| `cru` | Convert stirng to UPPER_CASE |
+| `cru` | Convert string to UPPER_CASE |
 | `:%Subvert/p{re,ost}processor{,s}//g` | Improved regex support for search and replace |
 
 ### <a name='2.2'></a>[surround.vim][surround]
