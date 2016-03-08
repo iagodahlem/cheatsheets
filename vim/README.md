@@ -7,15 +7,15 @@
 
 <img src=vim.png width=150>
 
-1. [Defauts](#defaults)
-2. [Plugins](#plugins)
-  * [abolish.vim](#abolish-vim)
-  * [surround.vim](#surround-vim)
-  * [unimpaired.vim](#unimpaired-vim)
+1. [Defauts](#1.0)
+2. [Plugins](#2.0)
+  * [abolish.vim](#2.1)
+  * [surround.vim](#2.2)
+  * [unimpaired.vim](#2.3)
 
 ---
 
-### Defaults
+### <a name='1.0'></a>Defaults
 
 | Command | Description |
 | --- | --- |
@@ -47,9 +47,9 @@
 | `O` | Add new line above the cursor in insert mode |
 | `o` | Add new line below the cursor in insert mode |
 
-## Plugins
+## <a name='2.0'></a>Plugins
 
-### [abolish.vim][abolish]
+### <a name='2.1'></a>[abolish.vim][abolish]
 
 | Command | Description |
 | --- | --- |
@@ -59,7 +59,7 @@
 | `cru` | Convert stirng to UPPER_CASE |
 | `:%Subvert/p{re,ost}processor{,s}//g` | Improved regex support for search and replace |
 
-### [surround.vim][surround]
+### <a name='2.2'></a>[surround.vim][surround]
 
 | Command | Description |
 | --- | --- |
@@ -70,7 +70,7 @@
 | `yss)` | Surround the whole line with parentheses |
 | `ds]` | Remove square brackets from word under cursor |
 
-### [unimpaired.vim][unimpaired]
+### <a name='2.3'></a>[unimpaired.vim][unimpaired]
 
 | Command | Description |
 | --- | --- |
