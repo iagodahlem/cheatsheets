@@ -56,6 +56,8 @@
 | `qq` | Start recording a macro named `q` |
 | `q` | Stop recording macro |
 | `@q` | Play macro `q` |
+| `'.'` | Jump to last modified line |
+| `` `. `` | Jump to exact position of last modification |
 
 ## <a name='2.0'></a>Plugins
 
