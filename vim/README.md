@@ -58,6 +58,10 @@
 | `@q` | Play macro `q` |
 | `'.'` | Jump to last modified line |
 | `` `. `` | Jump to exact position of last modification |
+| `Ctrl+o` | Open previous file at previous cursor position |
+| `Ctrl+i` | Open next file at previous cursor position |
+| `I` | Start input mode at the beginning of line |
+| `A` | Start input mode at the end of line |
 
 ## <a name='2.0'></a>Plugins
 
