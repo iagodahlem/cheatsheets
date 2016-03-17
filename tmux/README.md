@@ -16,9 +16,12 @@
 
 | Option | Description |
 | :--- | :--- |
+| `new -s beep` | Create a new session named `beep` |
+| `new -c boop` | Create a new window named `boop` |
 | `ls` | List all active sessions |
-| `attach -t n` | Attach to session `n` |
-| `kill-session -t n` | Kill session `n` |
+| `attach` | Attach to last active session |
+| `attach -t beep` | Attach to session `beep` |
+| `kill-session -t boop` | Kill session `boop` |
 
 ### <a name='2.0'></a>Defaults
 
