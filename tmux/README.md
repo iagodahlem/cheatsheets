@@ -24,15 +24,15 @@
 
 | Command | Description |
 | :--- | :--- |
-| `Ctlr+B %` | Create a new vertical pane |
-| `Ctrl+B "` | Create a new horizontal pane |
-| `Ctrl+B [arrow]` | Move focus between panes |
-| `Ctrl+B z` | Toggle current pane full screen mode |
-| `Ctrl+B c` | Create a new window |
-| `Ctrl+B n` | Move focus to window number `n` |
-| `Ctrl+B d` | Detach from current session |
+| `<Prefix> %` | Create a new vertical pane |
+| `<Prefix> "` | Create a new horizontal pane |
+| `<Prefix> [arrow]` | Move focus between panes |
+| `<Prefix> z` | Toggle current pane full screen mode |
+| `<Prefix> c` | Create a new window |
+| `<Prefix> n` | Move focus to window number `n` |
+| `<Prefix> d` | Detach from current session |
 | `clear` or `Ctrl+l` | Clear current pane output (equivalent to <kbd>⌘</kbd> + <kbd>K</kbd>) |
-| `Ctrl+B r` | Render UI |
+| `<Prefix> r` | Render UI |
 
 ---
 
