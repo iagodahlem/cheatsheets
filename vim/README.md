@@ -62,6 +62,10 @@
 | `Ctrl+i` | Open next file at previous cursor position |
 | `I` | Start input mode at the beginning of line |
 | `A` | Start input mode at the end of line |
+| `L` | Move cursor to last visible line |
+| `:nt.` | Copy the contents of line `n` to current line |
+| `zf` | Create a fold |
+| `za` | Unfold current fold |
 
 ## <a name='2.0'></a>Plugins
 
