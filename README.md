@@ -6,6 +6,7 @@
 > My personal list of cheatsheets
 
 * [CSS](./css)
+* [tmux](./tmux)
 * [Vim](./vim)
 
 ## License
