@@ -21,7 +21,7 @@
 ### <a name='1.0'></a>Defaults
 
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | `gf` | Open file under cursor |
 | `Ctrl+w gf` | Open file under cursor in a new tab |
 | `:ccl` | Close quickfix window |
@@ -66,13 +66,18 @@
 | `:nt.` | Copy the contents of line `n` to current line |
 | `zf` | Create a fold |
 | `za` | Unfold current fold |
+| `gg` | Move cursor to the top of file |
+| `G` | Move cursor to the bottom of file |
+| `H` | Move cursor to the top of view port |
+| `M` | Move cursor to the middle of view port |
+| `L` | Move cursor to the bottom of view port |
 
 ## <a name='2.0'></a>Plugins
 
 ### <a name='2.1'></a>[abolish.vim][abolish]
 
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | `crs` | Convert string to snake_case |
 | `crm` | Convert string to MixedCase (aka PascalCase) |
 | `crc` | Convert string to camelCase |
@@ -82,7 +87,7 @@
 ### <a name='2.2'></a>[surround.vim][surround]
 
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | `cs"''` | Change double quotes to single quotes |
 | `ysiw}` | Surround word under cursor with brackets |
 | `ysiw<small>` | Surround word under cursor with `<small>` tag |
@@ -93,7 +98,7 @@
 ### <a name='2.3'></a>[unimpaired.vim][unimpaired]
 
 | Command | Description |
-| --- | --- |
+| :--- | :--- |
 | `[b` | Next file on buffer list |
 | `]b` | Previous file on buffer list |
 | `[x` | Encode XML/HTML selection |
