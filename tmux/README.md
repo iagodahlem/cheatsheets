@@ -49,6 +49,8 @@
 | `<Prefix> x` | Destroy pane |
 | `clear` or `Ctrl+l` | Clear current pane output (equivalent to <kbd>⌘</kbd> + <kbd>K</kbd>) |
 | `<Prefix> r` | Render UI |
+| `<Prefix> [` | Enter scroll mode |
+| `q` | Exit scroll mode |
 
 ---
 
