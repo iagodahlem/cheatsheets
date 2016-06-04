@@ -10,9 +10,9 @@
 
 1. [Defauts](#1.0)
 2. [Plugins](#2.0)
-  * [abolish.vim](#2.1)
-  * [surround.vim](#2.2)
-  * [unimpaired.vim](#2.3)
+	* [abolish.vim](#2.1)
+	* [surround.vim](#2.2)
+	* [unimpaired.vim](#2.3)
 
 <small>My personal Vim configuration can be found [here][vimfiles].</small>
 
