@@ -1,4 +1,4 @@
-[index]: https://github.com/rafaelrinaldi/cheatsheets
+[index]: https://github.com/iagodahlem/cheatsheets
 [robert-penner]: https://twitter.com/robpenner
 [css-is-awesome]: https://jsbin.com/gasexu/edit?html,css,output
 [centering-things-transform]: https://jsbin.com/gadidi/edit?html,css,output
@@ -18,18 +18,20 @@
 
 1. [Apple San Fancisco font](#1.0)
 2. [Centering things](#2.0)
-  * [Using `transform` and absolute positioning](#2.1)
-  * [Mimicking `<table>` display](#2.2)
-  * [Using Flexbox](#2.3)
+	* [Using `transform` and absolute positioning](#2.1)
+	* [Mimicking `<table>` display](#2.2)
+	* [Using Flexbox](#2.3)
 3. [Font anti alias](#3.0)
 4. [New CSS specs](#4.0)
-  * [Custom properties](#4.1) <small>(variables)</small>
-  * [Custom media queries](#4.2)
-  * [Custom selectors](#4.3)
+	* [Custom properties](#4.1) <small>(variables)</small>
+	* [Custom media queries](#4.2)
+	* [Custom selectors](#4.3)
 5. [Single selector list styling](#5.0)
 6. [Smooth scrolling](#6.0)
 7. [Text selection](#7.0)
-8. [Transition easing functions](#8.0)
+8. [Transition](#8.0)
+11. [Animation](#9.0)
+9. [Transition easing functions](#10.0)
 
 ---
 
@@ -37,7 +39,7 @@
 
 ```css
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 ```
 
@@ -49,17 +51,17 @@ Useful when you already know the container dimension
 
 ```css
 .parent {
-  position: relative;
-  /* Arbitrary dimension */
-  width: 150px;
-  height: 150px;
+	position: relative;
+	/* Arbitrary dimension */
+	width: 150px;
+	height: 150px;
 }
 
 .child {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 ```
 
@@ -67,13 +69,13 @@ Useful when you already know the container dimension
 
 ```css
 .parent {
-  display: table;
+	display: table;
 }
 
 .child {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
 }
 ```
 
@@ -81,9 +83,9 @@ Useful when you already know the container dimension
 
 ```css
 .parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .child {}
@@ -93,9 +95,9 @@ Useful when you already know the container dimension
 
 ```css
 * {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 ```
 
@@ -108,13 +110,13 @@ Useful when you already know the container dimension
 
 ```css
 :root {
-  --color: #F06;
-  --bg-color: #FFF;
+	--color: #F06;
+	--bg-color: #FFF;
 }
 
 body {
-  color: var(--color);
-  background-color: var(--bg-color);
+	color: var(--color);
+	background-color: var(--bg-color);
 }
 ```
 
@@ -124,7 +126,7 @@ body {
 @custom-media --small-only screen and (max-width: 39.9375em);
 
 @media (--small-only) {
-  /* ... */
+	/* ... */
 }
 ```
 
@@ -136,7 +138,7 @@ body {
 @custom-selector :--button button, a, input[type=button];
 
 :--button {
-  /* ... */
+	/* ... */
 }
 ```
 
@@ -146,7 +148,7 @@ body {
 /* No need to use multiple selector nor override rules */
 
 li:not(:last-of-type) {
-  /* ... */
+	/* ... */
 }
 ```
 
@@ -154,8 +156,8 @@ li:not(:last-of-type) {
 
 ```css
 .container {
-  -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: auto;
 }
 ```
 
@@ -165,17 +167,58 @@ li:not(:last-of-type) {
 /* Can't select both at the same time */
 
 ::selection {
-  color: #FFF;
-  background-color: #F06;
+	color: #FFF;
+	background-color: #F06;
 }
 
 ::-moz-selection {
-  color: #FFF;
-  background-color: #F06;
+	color: #FFF;
+	background-color: #F06;
 }
 ```
 
-### <a name='8.0'></a>Transition easing functions
+### <a name='8.0'></a>Transition
+
+```css
+/* complete */
+transition-property: propertie;
+transition-duration: 0;
+transition-timing-function: ease;
+transition-delay: 0;
+
+/* shortcode */
+transition: |property| |duration| |timing-function| |delay|;
+```
+
+### <a name='9.0'></a>Animation
+
+```css
+/* complete */
+animation-name: animationName;
+animation-duration: 0 | 5s;
+animation-timing-function: ease | cubic-bezier(/* matrix */);
+animation-delay: 0;
+animation-iteration-count: 1 | 2 | ... |infinite;
+animation-direction: alternate | reverse;
+animation-play-state: running | paused;
+
+/* shortcode */
+animation: |name| |duration| |timing-function| |delay| |iteration-count| |direction| |play-state|;
+
+/* keyframe simple definition */
+@keyframe animationName {
+	from {  }
+	to {  }
+}
+
+/* keyframe step by step definition */
+@keyframe animationName {
+	0% {  }
+	50% {  }
+}
+```
+
+### <a name='10.0'></a>Transition easing functions
 
 Rounded values from [Robert Penner][robert-penner]'s easing functions.
 
