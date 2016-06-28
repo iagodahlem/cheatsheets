@@ -8,8 +8,8 @@
 
 This is a fork from [Rafael Rinaldi][author] [cheatsheets][author-cheatsheets], who is the base author
 
-* [Sublime Text](./subl)
 * [CSS](./css)
+* [Sublime Text](./subl)
 * [tmux](./tmux)
 * [Vim](./vim)
 
