@@ -6,7 +6,7 @@
 
 > My personal list of cheatsheets
 
-This is a fork from [Rafael Rinaldi][author] [cheatsheets][author-cheatsheets], who is the base author
+This is a fork from [Rafael Rinaldi][author] [cheatsheets][author-cheatsheets], who is the base author.
 
 * [CSS](./css)
 * [Sublime Text](./subl)
