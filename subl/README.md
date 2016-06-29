@@ -137,6 +137,7 @@
 | Command | Description |
 | :--- | :--- |
 | `ctrl+0` | Focus on side bar |
+| `↵` | Open file / focus on editor |
 | `UP/DOWN` | Navigate through directories |
 | `RIGHT` | Expand directory |
 | `LEFT` | Collapse directory |
