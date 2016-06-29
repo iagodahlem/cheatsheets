@@ -15,6 +15,7 @@
 	* [Text Selection](#1.7)
 	* [Code Folding and Marks](#1.8)
 	* [Bookmarks](#1.9)
+	* [Side Bar](#1.10)
 2. [Plugins](#2.0)
 	* [Terminal](#2.1)
 
@@ -130,6 +131,15 @@
 | `shift+F2` | Previous bookmark |
 | `F2` | Next bookmark |
 | `ctrl+F2` | Toggle bookmark |
+
+### <a name='1.10'></a>Side Bar
+
+| Command | Description |
+| :--- | :--- |
+| `ctrl+0` | Focus on side bar |
+| `UP/DOWN` | Navigate through directories |
+| `RIGHT` | Expand directory |
+| `LEFT` | Collapse directory |
 
 ## <a name='2.0'></a>Plugins
 
