@@ -18,6 +18,7 @@
 	* [Side Bar](#1.10)
 2. [Plugins](#2.0)
 	* [Terminal](#2.1)
+3. [Custons](#3.0)
 
 ---
 
@@ -150,3 +151,9 @@
 | :---  | :--- |
 | `ctrl+shift+t` | Open terminal project folder |
 | `ctrl+shift+alt+t` | Open terminal folder |
+
+## <a name='3.0'></a>Custons
+
+| Command | Description |
+| :---  | :--- |
+| `f12` | Auto indent |
