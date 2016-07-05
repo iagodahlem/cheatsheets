@@ -1,3 +1,5 @@
+[index]: https://github.com/iagodahlem/cheatsheets
+
 # Shellscript
 
 ## Expressions
@@ -31,3 +33,7 @@
 | 35 | Magenta |
 | 36 | Cyan |
 | 37 | White |
+
+---
+
+[← Back][index]
