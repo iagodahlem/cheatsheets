@@ -1,3 +1,5 @@
+[index]: https://github.com/iagodahlem/cheatsheets
+
 # Shellscript
 
 1. [Expressions](#1.0)
@@ -19,3 +21,21 @@
 | `-n string` | True if string is not empty. |
 | `string1 = string2` | True if string1 equals string2. |
 | `string1 != string2` | True if string1 does not equal string2. |
+
+## Colors
+
+| Code | Color |
+| :--- | :--- |
+| 00 | Off |
+| 30 | Black |
+| 31 | Red |
+| 32 | Green |
+| 33 | Yellow |
+| 34 | Blue |
+| 35 | Magenta |
+| 36 | Cyan |
+| 37 | White |
+
+---
+
+[← Back][index]

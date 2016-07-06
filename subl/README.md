@@ -157,3 +157,7 @@
 | Command | Description |
 | :---  | :--- |
 | `f12` | Auto indent |
+
+---
+
+[← Back][index]
