@@ -9,6 +9,7 @@
 This is a fork from [Rafael Rinaldi][author] [cheatsheets][author-cheatsheets], who is the base author.
 
 * [CSS](./css)
+* [Shellscript](./shellscript)
 * [Sublime Text](./subl)
 * [tmux](./tmux)
 * [Vim](./vim)
