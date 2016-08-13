@@ -3,6 +3,7 @@
 # Shellscript
 
 1. [Expressions](#1.0)
+2. [Colors](#2.0)
 
 ## <a name='1.0'></a> Expressions
 
@@ -22,7 +23,7 @@
 | `string1 = string2` | True if string1 equals string2. |
 | `string1 != string2` | True if string1 does not equal string2. |
 
-## Colors
+## <a name='2.0'></a> Colors
 
 | Code | Color |
 | :--- | :--- |
@@ -35,6 +36,18 @@
 | 35 | Magenta |
 | 36 | Cyan |
 | 37 | White |
+
+## <a name='3.0'></a> General
+
+```sh
+# Ask for the administrator password upfront
+sudo -v
+
+
+# Tells the shell script to exit if it encounters an error
+set -eo pipefail
+set -e
+```
 
 ---
 
