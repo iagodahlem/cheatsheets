@@ -18,7 +18,7 @@
 	* [Side Bar](#1.10)
 2. [Plugins](#2.0)
 	* [Terminal](#2.1)
-3. [Custons](#3.0)
+3. [Customs](#3.0)
 
 ---
 
@@ -149,14 +149,14 @@
 
 | Command | Description |
 | :---  | :--- |
-| `ctrl+shift+t` | Open terminal project folder |
-| `ctrl+shift+alt+t` | Open terminal folder |
+| `ctrl+shift+alt+t` | Open terminal project folder |
 
-## <a name='3.0'></a>Custons
+## <a name='3.0'></a>Customs
 
 | Command | Description |
 | :---  | :--- |
-| `f12` | Auto indent |
+| `f12` | Reindent |
+| `ctrl+shift+alt+r` | Reveal in side bar |
 
 ---
 
