@@ -1,5 +1,6 @@
-[index]: https://github.com/rafaelrinaldi/cheatsheets
 [abolish]: https://github.com/tpope/vim-abolish
+[fireplace]: https://github.com/tpope/vim-fireplace
+[index]: https://github.com/rafaelrinaldi/cheatsheets
 [surround]: https://github.com/tpope/vim-surround
 [unimpaired]: https://github.com/tpope/vim-unimpaired
 [vimfiles]: https://github.com/rafaelrinaldi/vimfiles
@@ -11,8 +12,9 @@
 1. [Defauts](#1.0)
 2. [Plugins](#2.0)
   * [abolish.vim](#2.1)
-  * [surround.vim](#2.2)
-  * [unimpaired.vim](#2.3)
+  * [fireplace.vim](#2.2)
+  * [surround.vim](#2.3)
+  * [unimpaired.vim](#2.4)
 
 <small>My personal Vim configuration can be found [here][vimfiles].</small>
 
@@ -84,7 +86,17 @@
 | `cru` | Convert string to UPPER_CASE |
 | `:%Subvert/p{re,ost}processor{,s}//g` | Improved regex support for search and replace |
 
-### <a name='2.2'></a>[surround.vim][surround]
+### <a name='2.2'></a>[fireplace.vim][fireplace]
+
+| Command | Description |
+| :--- | :--- |
+| `cpp` | Evaluates current via REPL |
+| `K` | Opens up documentation about keyword under cursor |
+| `[d` | Opens up source code of keyword under cursor |
+| `cqp` | Bring up a prompt for code to eval/print |
+| `cpr` | Run tests and compiles the program |
+
+### <a name='2.3'></a>[surround.vim][surround]
 
 | Command | Description |
 | :--- | :--- |
@@ -95,7 +107,7 @@
 | `yss)` | Surround the whole line with parentheses |
 | `ds]` | Remove square brackets from word under cursor |
 
-### <a name='2.3'></a>[unimpaired.vim][unimpaired]
+### <a name='2.4'></a>[unimpaired.vim][unimpaired]
 
 | Command | Description |
 | :--- | :--- |
