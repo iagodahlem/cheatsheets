@@ -1,9 +1,10 @@
 [abolish]: https://github.com/tpope/vim-abolish
+[dotfiles]: https://github.com/rafaelrinaldi/dotfiles
 [fireplace]: https://github.com/tpope/vim-fireplace
 [index]: https://github.com/rafaelrinaldi/cheatsheets
 [surround]: https://github.com/tpope/vim-surround
 [unimpaired]: https://github.com/tpope/vim-unimpaired
-[vimfiles]: https://github.com/rafaelrinaldi/vimfiles
+[vim-sexp-mappings-for-regular-people]: https://github.com/tpope/vim-sexp-mappings-for-regular-people
 
 # Vim
 
@@ -12,11 +13,12 @@
 1. [Defauts](#1.0)
 2. [Plugins](#2.0)
   * [abolish.vim](#2.1)
-  * [fireplace.vim](#2.2)
-  * [surround.vim](#2.3)
-  * [unimpaired.vim](#2.4)
+  * [surround.vim](#2.2)
+  * [unimpaired.vim](#2.3)
+  * [fireplace.vim](#2.4)
+  * [vim-sexp-mappings-for-regular-people](#2.5)
 
-<small>My personal Vim configuration can be found [here][vimfiles].</small>
+<small>My personal Vim configuration can be found [here][dotfiles].</small>
 
 ---
 
@@ -86,17 +88,7 @@
 | `cru` | Convert string to UPPER_CASE |
 | `:%Subvert/p{re,ost}processor{,s}//g` | Improved regex support for search and replace |
 
-### <a name='2.2'></a>[fireplace.vim][fireplace]
-
-| Command | Description |
-| :--- | :--- |
-| `cpp` | Evaluates current via REPL |
-| `K` | Opens up documentation about keyword under cursor |
-| `[d` | Opens up source code of keyword under cursor |
-| `cqp` | Bring up a prompt for code to eval/print |
-| `cpr` | Run tests and compiles the program |
-
-### <a name='2.3'></a>[surround.vim][surround]
+### <a name='2.2'></a>[surround.vim][surround]
 
 | Command | Description |
 | :--- | :--- |
@@ -107,7 +99,7 @@
 | `yss)` | Surround the whole line with parentheses |
 | `ds]` | Remove square brackets from word under cursor |
 
-### <a name='2.4'></a>[unimpaired.vim][unimpaired]
+### <a name='2.3'></a>[unimpaired.vim][unimpaired]
 
 | Command | Description |
 | :--- | :--- |
@@ -127,6 +119,32 @@
 | `]n` | Previous Git diff conflict marker |
 | `[y` | Escape string (C String style) |
 | `]y` | Unescape string (C String style) |
+
+## Clojure
+
+### <a name='2.4'></a>[fireplace.vim][fireplace]
+
+| Command | Description |
+| :--- | :--- |
+| `cpp` | Evaluates current via REPL |
+| `K` | Opens up documentation about keyword under cursor |
+| `[d` | Opens up source code of keyword under cursor |
+| `cqp` | Bring up a prompt for code to eval/print |
+| `cpr` | Run tests and compiles the program |
+
+### <a name='2.5'></a>[vim-sexp mappings for regular people][vim-sexp-mappings-for-regular-people]
+
+| Command | Description |
+| :--- | :--- |
+| `ysaf)` | Surround current form with parentheses |
+| `dsf` | Delete surroundings of form |
+| `cse)` | Surround elements in parentheses |
+| `>)` | Slurp |
+| `<)` | Barf |
+| `>f` and `<f` | Move form |
+| `>e` and `<e` | Move element |
+| `<I` | Insert at the beginning of a form |
+| `>I` | Insert at the end of a form |
 
 ---
 
